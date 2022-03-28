@@ -1,18 +1,36 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Order here</router-link> |
+    <router-link to="/request">Request</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
+html,
+body {
+  background-color: hsl(6, 72%, 76%);
+}
+
+h1,
+h2,
+span {
+  color: hsl(0, 0%, 100%);
+}
+
+h2,
+span {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
 }
 
 nav {
@@ -20,11 +38,13 @@ nav {
 }
 
 nav a {
+  color: hsl(0, 0%, 100%);
   font-weight: bold;
-  color: #2c3e50;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: hsl(348, 100%, 36%);
+  text-decoration: underline;
 }
 </style>
